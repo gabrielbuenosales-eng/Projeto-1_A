@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo dos Superesportivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <h1>Supercars Universe</h1>
+        <p>Escolha uma máquina e interaja!</p>
+    </header>
+
+    <main class="container">
+        <div class="card" data-marca="Ferrari">
+            <h2>Ferrari SF90</h2>
+            <p>Motor V8 Turbo + 3 Motores Elétricos (1000 cv)</p>
+            <button class="btn-ronco" onclick="reproduzirSom('ferrari')">🔊 Ouvir Ronco</button>
+            <button class="btn-curtir" onclick="curtirCarro('Ferrari')">❤️ <span id="like-Ferrari">0</span></button>
+        </div>
+
+        <div class="card" data-marca="Koenigsegg">
+            <h2>Koenigsegg Jesko</h2>
+            <p>Motor V8 Bi-turbo (1600 cv com E85)</p>
+            <button class="btn-ronco" onclick="reproduzirSom('koenigsegg')">🔊 Ouvir Ronco</button>
+            <button class="btn-curtir" onclick="curtirCarro('Koenigsegg')">❤️ <span id="like-Koenigsegg">0</span></button>
+        </div>
+
+        <div class="card" data-marca="McLaren">
+            <h2>McLaren P1</h2>
+            <p>Motor V8 Híbrido (916 cv)</p>
+            <button class="btn-ronco" onclick="reproduzirSom('mclaren')">🔊 Ouvir Ronco</button>
+            <button class="btn-curtir" onclick="curtirCarro('McLaren')">❤️ <span id="like-McLaren">0</span></button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Criado no GitHub Pages</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
